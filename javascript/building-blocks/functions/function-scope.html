@@ -11,10 +11,12 @@
 
     function a() {
       const y = 2;
+      output(z);
     }
 
     function b() {
       const z = 3;
+      output(y);
     }
 
     function output(value) {
@@ -22,6 +24,25 @@
       document.body.appendChild(para);
       para.textContent = `Value: ${value}`;
     }
+
+    function add7(num) {
+      num = num + 7;
+      return num;
+    }
+    // console.log(add7(7));
+
+    function multiply(a, b) {
+      return a * b;
+    }
+
+    function capitalize(text) {
+      return text.charAt(0).toUpperCase() + text.slice(1)
+    }
+
+    function lastLetter(text) {
+      return text.charAt(text.length - 1);
+    }
+
   </script>
 </body>
 </html>
